@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AlchemistLocation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DragonLocation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EnchanterLocation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LocalinnLocation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PrincessLocation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RegisterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TownWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AlchemistLocation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DragonLocation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EnchanterLocation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LocalinnLocation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PrincessLocation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TownWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="WPFGameSchool.EnchanterLocation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFGameSchool"
+        mc:Ignorable="d"
+        Title="EnchanterLocation"  Height="450" Width="433" ResizeMode="NoResize">
+    <Grid>
+        <Image Source="/enchanter.png"></Image>
+        <Button Content="Enchant" HorizontalAlignment="Left" Margin="41,346,0,0" VerticalAlignment="Top" Width="67" Height="24" BorderBrush="Transparent" FontSize="14" FontWeight="Bold" Click="TakeLoot_Click">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF1050A5" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF5BBCD7" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Leave" HorizontalAlignment="Left" Margin="126,346,0,0" VerticalAlignment="Top" Width="67" Height="24" BorderBrush="Transparent" FontSize="14" FontWeight="Bold" Click="GoBack_Click" >
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF1050A5" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF5BBCD7" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="The Enchanter" VerticalAlignment="Top" Height="21" Width="112" Foreground="#FF000CCC" FontSize="16" FontWeight="Bold"/>
+        <TextBlock x:Name="EnchanterShowText" HorizontalAlignment="Left" Margin="10,275,0,0" TextWrapping="Wrap" Text="She puts the frostenchant on your weapon!" VerticalAlignment="Top" Height="66" Width="89" Foreground="#FF43F2FF" GotFocus="Enchanter_Text"/>
+
+    </Grid>
+</Window>

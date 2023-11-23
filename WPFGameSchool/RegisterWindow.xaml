@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFGameSchool.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFGameSchool"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Height="239" Width="394" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Images/necromancer.png" Margin="-50,-50,-50,-50" Grid.RowSpan="2" />
+        <StackPanel Margin="0,10,0,-21" Grid.RowSpan="2">
+            <TextBlock Text="Username:" Foreground="WhiteSmoke" Width="196"/>
+            <TextBox x:Name="registerUser" Width="200" Height="25" Margin="0,5,0,5" Background="Transparent" BorderBrush="DarkRed" BorderThickness="1" Foreground="#FFF50B0B"/>
+            <TextBlock Text="Password:"  Foreground="WhiteSmoke" Width="196"/>
+            <PasswordBox x:Name="registerPass" Width="200" Height="25" Margin="0,5,0,5" Background="Transparent" BorderBrush="DarkRed" BorderThickness="1" Foreground="#FFFF0909"/>
+            <Button Content="Register" Width="80" Height="25" Margin="0,10,0,0" Click="Register_Click"/>
+        </StackPanel>
+        <Button Content="back" HorizontalAlignment="Left" Margin="0,70,0,0" Click="Button_Click" Grid.Row="1" Width="40"/>
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPFGameSchool.LocalinnLocation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFGameSchool"
+        mc:Ignorable="d"
+        Title="LocalinnLocation" Height="450" Width="433" ResizeMode="NoResize">
+    <Grid>
+        <Image Source="/localinn.png"></Image>
+        <Button Content="Talk to OldMan" HorizontalAlignment="Left" Margin="90,349,0,0" VerticalAlignment="Top" Width="85" BorderBrush="Transparent" Click="OldmanLoot_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFDFB38C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Leave" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Width="51" BorderBrush="Transparent" Click="GoBack_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFCDA581" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="The Local Inn" VerticalAlignment="Top" Height="19" Width="112" FontSize="16" FontWeight="Bold">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFAF4403" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="You meet and old man he seems to have some wise words for your battle against the dragon." VerticalAlignment="Top" Height="115" Width="101" Foreground="#FF727618" FontStyle="Italic"/>
+        <TextBlock x:Name="OldmanShowText" HorizontalAlignment="Left" Margin="201,151,0,0" TextWrapping="Wrap" Text="You gotta pierce its heart with the frost enchant... it wont be easy!" VerticalAlignment="Top" Height="90" Width="83" Foreground="#FFDCD4CC" AutomationProperties.AccessKey="OldMan_Text" GotFocus="OldMan_Text"/>
+
+    </Grid>
+</Window>

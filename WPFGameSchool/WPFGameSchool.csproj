@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Alchemist.png" />
+    <None Remove="Archer.png" />
+    <None Remove="Barbarian.jpg" />
+    <None Remove="Benny.png" />
+    <None Remove="enchanter.png" />
+    <None Remove="Images\Barbarian.jpg" />
+    <None Remove="Images\charpick.jpg" />
+    <None Remove="Images\Town.jpg" />
+    <None Remove="Images\necromancer.png" />
+    <None Remove="localinn.png" />
+    <None Remove="princess.png" />
+    <None Remove="Ratking2.png" />
+    <None Remove="Sounds\Victory.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Alchemist.png" />
+    <Resource Include="Archer.png" />
+    <Resource Include="Barbarian.jpg" />
+    <Resource Include="Benny.png" />
+    <Resource Include="enchanter.png" />
+    <Resource Include="Images\Barbarian.jpg" />
+    <Resource Include="Images\charpick.jpg" />
+    <Resource Include="Images\Town.jpg" />
+    <Resource Include="Images\necromancer.png" />
+    <Resource Include="localinn.png" />
+    <Resource Include="princess.png" />
+    <Resource Include="Ratking2.png" />
+    <Resource Include="Sounds\Victory.mp3" />
+  </ItemGroup>
+
+</Project>
